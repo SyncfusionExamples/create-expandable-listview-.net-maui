@@ -1,2 +1,1 @@
-# create-expandable-listview-.net-maui
-How to create an expandable ListView in .Net MAUI?
+**[View document in Syncfusion .NET MAUI Knowledge Base](https://www.syncfusion.com/kb/13078/how-to-create-an-expandable-listview-sflistview-in-net-maui)**
