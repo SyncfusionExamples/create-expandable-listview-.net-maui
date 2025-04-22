@@ -45,7 +45,7 @@ namespace ListViewMaui
                    listview.RefreshItem(previousIndex, previousIndex, false);
             }
 
-            if (tappedItem == (e.ItemData as Contact))
+            if (tappedItem == (e.DataItem as Contact))
             {
                 if (DeviceInfo.Platform == DevicePlatform.MacCatalyst)
                 {
@@ -57,7 +57,7 @@ namespace ListViewMaui
                 return;
             }
 
-            tappedItem = e.ItemData as Contact;
+            tappedItem = e.DataItem as Contact;
             tappedItem.IsVisible = true;
 
             if (DeviceInfo.Platform == DevicePlatform.MacCatalyst)
@@ -69,7 +69,7 @@ namespace ListViewMaui
             }
             else
             {
-                var currentIndex = listview.DataSource.DisplayItems.IndexOf(e.ItemData);
+                var currentIndex = listview.DataSource.DisplayItems.IndexOf(e.DataItem);
                  listview.RefreshItem(currentIndex, currentIndex, false);
             }
         }
