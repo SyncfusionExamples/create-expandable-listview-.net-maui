@@ -120,7 +120,7 @@ namespace ListViewMaui
 
         #region Interface Member
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         public void OnPropertyChanged(string name)
         {
