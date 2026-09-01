@@ -85,10 +85,12 @@ private void ListView_ItemTapped(object sender, Syncfusion.Maui.ListView.ItemTap
             var currentIndex = listview.DataSource.DisplayItems.IndexOf(e.ItemData);
             Device.BeginInvokeOnMainThread(() => { listview.RefreshItem(currentIndex, currentIndex, false); });
         }
-    }**Output**  
+    }
+    
 
 ![Expandable ListView in .Net MAUI](https://www.syncfusion.com/uploads/user/kb/maui/maui-1504/maui-1504_img1.png)
 
+**Demo**
 Download the complete sample on [GitHub](https://github.com/SyncfusionExamples/create-expandable-listview-.net-maui).
 
 **Conclusion**
